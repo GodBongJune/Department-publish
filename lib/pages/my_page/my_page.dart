@@ -1,3 +1,4 @@
+import 'package:department/pages/my_page/my_page_widgets/my_page_body.dart';
 import 'package:flutter/material.dart';
 
 class MyPage extends StatelessWidget {
@@ -5,6 +6,8 @@ class MyPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: MyPageBody(),
+    );
   }
 }
