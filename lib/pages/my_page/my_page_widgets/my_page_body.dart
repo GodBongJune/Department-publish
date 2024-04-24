@@ -1,5 +1,6 @@
 import 'package:department/core/constant/color_and_size.dart';
 import 'package:department/pages/my_info_page/my_info_page.dart';
+import 'package:department/pages/my_write_page/my_write_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -62,7 +63,13 @@ class MyPageBody extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => MyWritePage(),
+                                ),
+                              );
+                            },
                             child: Column(
                               children: [
                                 Text(
@@ -85,7 +92,15 @@ class MyPageBody extends StatelessWidget {
                             ),
                           ),
                           InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => MyWritePage(
+                                    tabIndex: 1,
+                                  ),
+                                ),
+                              );
+                            },
                             child: Column(
                               children: [
                                 Text(
