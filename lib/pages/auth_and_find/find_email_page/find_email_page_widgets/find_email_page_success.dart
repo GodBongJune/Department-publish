@@ -1,5 +1,6 @@
 import 'package:department/core/constant/color_and_size.dart';
 import 'package:department/core/constant/custom_util.dart';
+import 'package:department/core/constant/move.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -44,7 +45,9 @@ class FindEmailPageSuccess extends StatelessWidget {
                   Spacer(),
                   basicButton(
                     context: context,
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.of(context).popAndPushNamed(Move.findPassword);
+                    },
                     buttonColor: Colors.white,
                     textColor: k3DColor,
                     text: "비밀번호 찾기",
@@ -52,7 +55,9 @@ class FindEmailPageSuccess extends StatelessWidget {
                   SizedBox(height: MediaQuery.of(context).size.height * 0.02),
                   basicButton(
                     context: context,
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.of(context).pop();
+                    },
                     buttonColor: k3DColor,
                     textColor: Colors.white,
                     text: "로그인",

@@ -1,6 +1,7 @@
 import 'package:department/core/constant/color_and_size.dart';
 import 'package:department/core/constant/custom_util.dart';
 import 'package:department/pages/auth_and_find/find_email_page/find_email_page.dart';
+import 'package:department/pages/auth_and_find/find_password_page/find_password_page.dart';
 import 'package:department/pages/auth_and_find/join_page/join_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -115,7 +116,13 @@ class _LoginPageBodyState extends State<LoginPageBody> {
                     Flexible(
                       child: basicButton(
                         context: context,
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => FindPasswordPage(),
+                            ),
+                          );
+                        },
                         buttonColor: Colors.transparent,
                         textColor: k3DColor,
                         text: "비밀번호 찾기",
