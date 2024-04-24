@@ -75,6 +75,7 @@ class JoinPageFormfield extends StatelessWidget {
                         hintText: "인증번호를 입력해주세요",
                         obscureText: false,
                         suffix: "확인",
+                        number: true,
                       ),
                     ],
                   ),
@@ -135,13 +136,17 @@ class JoinPageFormfield extends StatelessWidget {
                         context: context,
                         hintText: "휴대폰번호를 입력해주세요",
                         obscureText: false,
+                        number: true,
                       ),
                     ],
                   ),
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.02),
                   Spacer(),
                   basicButton(
                     context: context,
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.of(context).pop();
+                    },
                     buttonColor: k3DColor,
                     textColor: Colors.white,
                     text: "회원가입하기",

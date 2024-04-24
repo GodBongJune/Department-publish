@@ -1,6 +1,7 @@
 import 'package:department/core/constant/color_and_size.dart';
 import 'package:department/core/constant/custom_util.dart';
 import 'package:department/core/constant/move.dart';
+import 'package:department/pages/auth_and_find/join_page/join_page_widgets/join_collection_agree.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -75,7 +76,13 @@ class _JoinPageAgreeState extends State<JoinPageAgree> {
                         ),
                         Spacer(),
                         InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => JoinCollectionAgree(),
+                              ),
+                            );
+                          },
                           child: Text(
                             "보기",
                             style: TextStyle(
@@ -114,7 +121,13 @@ class _JoinPageAgreeState extends State<JoinPageAgree> {
                         ),
                         Spacer(),
                         InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => JoinCollectionAgree(),
+                              ),
+                            );
+                          },
                           child: Text(
                             "보기",
                             style: TextStyle(
@@ -153,7 +166,13 @@ class _JoinPageAgreeState extends State<JoinPageAgree> {
                         ),
                         Spacer(),
                         InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => JoinCollectionAgree(),
+                              ),
+                            );
+                          },
                           child: Text(
                             "보기",
                             style: TextStyle(

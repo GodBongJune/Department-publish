@@ -1,6 +1,7 @@
 import 'package:department/core/constant/color_and_size.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void customDialog(BuildContext context, String message) {
   showDialog(
@@ -78,12 +79,14 @@ Widget customTextFormField({
   String? suffix,
   VoidCallback? suffixOnTap,
   bool readOnly = false,
+  bool number = false,
 }) {
   return TextFormField(
     readOnly: readOnly,
     obscureText: obscureText,
     controller: controller,
     style: TextStyle(decorationThickness: 0),
+    keyboardType: number ? TextInputType.number : TextInputType.text,
     decoration: InputDecoration(
       filled: readOnly,
       fillColor: readOnly ? Colors.grey[200] : Colors.transparent,
@@ -116,5 +119,6 @@ Widget customTextFormField({
         borderSide: BorderSide(color: kE8Color),
       ),
     ),
+    inputFormatters: number ? [FilteringTextInputFormatter.digitsOnly] : [],
   );
 }
