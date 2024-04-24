@@ -1,3 +1,4 @@
+import 'package:department/pages/auth_and_find/login_page/login_page_widgets/login_page_body.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -5,6 +6,8 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: LoginPageBody(),
+    );
   }
 }

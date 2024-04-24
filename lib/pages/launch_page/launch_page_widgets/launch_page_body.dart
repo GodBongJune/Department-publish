@@ -1,6 +1,6 @@
 import 'package:department/core/constant/color_and_size.dart';
 import 'package:department/core/constant/custom_util.dart';
-import 'package:department/pages/auth_and_find_page/login_page/login_page.dart';
+import 'package:department/pages/auth_and_find/login_page/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -19,6 +19,7 @@ class _LaunchPageBodyState extends State<LaunchPageBody> {
       child: CustomScrollView(
         slivers: [
           SliverFillRemaining(
+            hasScrollBody: false,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

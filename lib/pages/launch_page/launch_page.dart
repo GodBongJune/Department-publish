@@ -1,4 +1,4 @@
-import 'package:department/pages/auth_and_find_page/login_page/login_page.dart';
+import 'package:department/pages/auth_and_find/login_page/login_page.dart';
 import 'package:department/pages/launch_page/launch_page_widgets/launch_page_body.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

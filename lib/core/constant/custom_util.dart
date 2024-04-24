@@ -111,11 +111,9 @@ Widget customTextFormField({
       ),
       focusedBorder: UnderlineInputBorder(
         borderSide: BorderSide(color: k3DColor),
-        borderRadius: BorderRadius.circular(100),
       ),
       enabledBorder: UnderlineInputBorder(
         borderSide: BorderSide(color: kE8Color),
-        borderRadius: BorderRadius.circular(100),
       ),
     ),
   );
