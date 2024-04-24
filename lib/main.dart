@@ -1,4 +1,5 @@
 import 'package:department/core/constant/appCode.dart';
+import 'package:department/core/constant/move.dart';
 import 'package:department/core/constant/theme.dart';
 import 'package:department/pages/splash_page/splash_page.dart';
 import 'package:flutter/material.dart';
@@ -45,7 +46,7 @@ class MyApp extends StatelessWidget {
           );
         },
         debugShowCheckedModeBanner: false,
-        // routes: getRouters(),
+        routes: getRouters(),
         navigatorKey: navigatorKey,
         home: SplashPage(),
         theme: theme(),
