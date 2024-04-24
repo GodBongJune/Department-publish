@@ -78,6 +78,7 @@ Widget customTextFormField({
   TextEditingController? controller,
   String? suffix,
   VoidCallback? suffixOnTap,
+  ValueChanged<String>? onChanged,
   bool readOnly = false,
   bool number = false,
 }) {
@@ -85,6 +86,7 @@ Widget customTextFormField({
     readOnly: readOnly,
     obscureText: obscureText,
     controller: controller,
+    onChanged: onChanged,
     style: TextStyle(decorationThickness: 0),
     keyboardType: number ? TextInputType.number : TextInputType.text,
     decoration: InputDecoration(

@@ -1,4 +1,5 @@
 import 'package:department/core/constant/color_and_size.dart';
+import 'package:department/pages/my_info_page/my_info_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -33,7 +34,13 @@ class MyPageBody extends StatelessWidget {
                         children: [
                           Spacer(),
                           InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => MyInfoPage(),
+                                ),
+                              );
+                            },
                             child: Icon(
                               CupertinoIcons.gear,
                               color: Colors.white,
