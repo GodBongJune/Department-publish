@@ -1,4 +1,5 @@
 import 'package:department/core/constant/color_and_size.dart';
+import 'package:department/pages/notice/notice_detail_page/notice_detail_page.dart';
 import 'package:flutter/material.dart';
 
 class NoticeListPageBody extends StatelessWidget {
@@ -50,11 +51,11 @@ class NoticeListPageBody extends StatelessWidget {
         itemBuilder: (context, index) {
           return InkWell(
             onTap: () {
-              // Navigator.of(context).push(
-              //   MaterialPageRoute(
-              //     builder: (context) => NoticeDetailPage(),
-              //   ),
-              // );
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => NoticeDetailPage(),
+                ),
+              );
             },
             child: Container(
               height: MediaQuery.of(context).size.height * 0.15,
