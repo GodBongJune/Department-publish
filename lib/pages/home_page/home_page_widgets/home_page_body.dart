@@ -1,4 +1,5 @@
 import 'package:department/core/constant/color_and_size.dart';
+import 'package:department/pages/notice/notice_list_page/notice_list_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -25,7 +26,7 @@ class HomePageBody extends StatelessWidget {
       },
       {
         "image": "assets/home/home4.svg",
-        "route": "",
+        "route": NoticeListPage(),
         "title": "공지사항",
       },
       {
@@ -87,7 +88,13 @@ class HomePageBody extends StatelessWidget {
                       ),
                       Spacer(),
                       InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => NoticeListPage(),
+                            ),
+                          );
+                        },
                         child: Container(
                           height: MediaQuery.of(context).size.height * 0.06,
                           decoration: BoxDecoration(
