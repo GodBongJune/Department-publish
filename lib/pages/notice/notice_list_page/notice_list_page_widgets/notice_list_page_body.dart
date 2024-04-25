@@ -24,19 +24,20 @@ class NoticeListPageBody extends StatelessWidget {
       },
       {
         "title": "[모집중] 랜섬웨어 대응 솔루션 무상지원사업 신청 안내",
-        "content": "",
+        "content":
+            "게시판 세부 내용의 일부가 보여지는 곳입니다. 대략적으로 1~2줄만 보이고 나머지는 말줄임을 사용해주세요게시판 세부 내용의 일부가 보여지는 곳입니다. 대략적으로 1~2줄만 보이고 나머지는 말줄임을 사용해주세요게시판 세부 내용의 일부가 보여지는 곳입니다. 대략적으로 1~2줄만 보이고 나머지는 말줄임을 사용해주세요",
         "date": "2024.03.07",
         "image": "",
       },
       {
         "title": "[모집중] 랜섬웨어 대응 솔루션 무상지원사업 신청 안내",
-        "content": "",
+        "content": "게시판 내용입니다",
         "date": "2024.03.07",
         "image": "https://picsum.photos/200/300",
       },
       {
         "title": "[모집중] 랜섬웨어 대응 솔루션 무상지원사업 신청 안내",
-        "content": "",
+        "content": "게시판 내용",
         "date": "2024.03.07",
         "image": "https://picsum.photos/200/300",
       },
@@ -69,7 +70,7 @@ class NoticeListPageBody extends StatelessWidget {
                           Text(
                             noticeList[index]["date"],
                             style: TextStyle(
-                              color: kC8Color,
+                              color: k98Color,
                               fontSize: size13,
                             ),
                           ),
@@ -85,7 +86,7 @@ class NoticeListPageBody extends StatelessWidget {
                           Text(
                             noticeList[index]["content"],
                             style: TextStyle(
-                              color: k3DColor,
+                              color: k98Color,
                               fontSize: size13,
                             ),
                             maxLines: 2,
