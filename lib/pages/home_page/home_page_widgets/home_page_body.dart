@@ -1,4 +1,5 @@
 import 'package:department/core/constant/color_and_size.dart';
+import 'package:department/pages/community/community_list_page/community_list_page.dart';
 import 'package:department/pages/notice/notice_list_page/notice_list_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -51,7 +52,7 @@ class HomePageBody extends StatelessWidget {
       },
       {
         "image": "assets/home/home9.svg",
-        "route": "",
+        "route": CommunityListPage(),
         "title": "커뮤니티",
       },
     ];
@@ -140,11 +141,11 @@ class HomePageBody extends StatelessWidget {
                     children: [
                       InkWell(
                         onTap: () {
-                          // Navigator.of(context).push(
-                          //   MaterialPageRoute(
-                          //     builder: (context) => homeList[index]["route"],
-                          //   ),
-                          // );
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => homeList[index]["route"],
+                            ),
+                          );
                         },
                         child: Column(
                           children: [

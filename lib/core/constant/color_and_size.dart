@@ -11,6 +11,7 @@ const k27CColor = Color(0xFF27C100);
 const kF9CColor = Color(0xFFF9F9F9);
 const kFFColor = Color(0xFFFFC656);
 const k98Color = Color(0xFF989898);
+const kFAColor = Color(0xFFFA3F3F);
 
 const double size10 = 10.0;
 const double size13 = 13.0;
