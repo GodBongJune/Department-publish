@@ -1,4 +1,5 @@
 import 'package:department/core/constant/color_and_size.dart';
+import 'package:department/pages/bookmark_list_page/bookmark_list_page.dart';
 import 'package:department/pages/my_info_page/my_info_page.dart';
 import 'package:department/pages/my_write_page/my_write_page.dart';
 import 'package:flutter/cupertino.dart';
@@ -128,12 +129,19 @@ class MyPageBody extends StatelessWidget {
                   ),
                 ),
               ),
+              Container(height: MediaQuery.of(context).size.height * 0.001),
               //저장한목록
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Center(
                   child: InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => BookmarkListPage(),
+                        ),
+                      );
+                    },
                     child: Row(
                       children: [
                         Text(

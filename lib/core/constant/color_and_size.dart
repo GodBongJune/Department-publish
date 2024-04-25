@@ -9,6 +9,7 @@ const k9DColor = Color(0xFF9D9D9D);
 const k9CColor = Color(0xFF9C9C9C);
 const k27CColor = Color(0xFF27C100);
 const kF9CColor = Color(0xFFF9F9F9);
+const kFFColor = Color(0xFFFFC656);
 
 const double size10 = 10.0;
 const double size13 = 13.0;

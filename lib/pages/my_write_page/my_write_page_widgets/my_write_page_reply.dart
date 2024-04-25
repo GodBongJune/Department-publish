@@ -19,8 +19,7 @@ class MyWritePageReply extends StatelessWidget {
       {
         "time": "2024.03.08",
         "title": "[서울역 근처] 유아 백팩 나눔",
-        "content":
-            "게시판 세부 내용게시판 세부 내용게시판 세부 내용게시판 세부 내용게시판 세부 내용게시판 세부 내용게시판 세부 내용게시판 세부 내용게시판 세부 내용게시판 세부 내용게시판 세부 내용게시판 세부 내용게시판 세부 내용게시판 세부 내용게시판 세부 내용게시판 세부 내용",
+        "content": "게시판 세부 내용",
         "image":
             "https://fastly.picsum.photos/id/118/200/300.jpg?hmac=y5ur5cobUmPTuS2C6FvS8uE6IYI07GiElMbvlmulnUA",
       },
