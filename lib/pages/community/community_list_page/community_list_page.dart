@@ -1,5 +1,6 @@
 import 'package:department/core/constant/color_and_size.dart';
 import 'package:department/pages/community/community_list_page/community_list_page_widgets/community_list_page_body.dart';
+import 'package:department/pages/community/community_write_page/community_write_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,13 @@ class CommunityListPage extends StatelessWidget {
       body: CommunityListPageBody(),
       floatingActionButton: FloatingActionButton(
         backgroundColor: k3DColor,
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => CommunityWritePage(),
+            ),
+          );
+        },
         child: Icon(
           CupertinoIcons.plus,
           color: Colors.white,
