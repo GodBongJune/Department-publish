@@ -1,4 +1,5 @@
 import 'package:department/core/constant/color_and_size.dart';
+import 'package:department/pages/calendar_page/calendar_page.dart';
 import 'package:department/pages/community/community_list_page/community_list_page.dart';
 import 'package:department/pages/notice/notice_list_page/notice_list_page.dart';
 import 'package:flutter/material.dart';
@@ -37,7 +38,7 @@ class HomePageBody extends StatelessWidget {
       },
       {
         "image": "assets/home/home6.svg",
-        "route": "",
+        "route": CalendarPage(),
         "title": "학사 일정",
       },
       {

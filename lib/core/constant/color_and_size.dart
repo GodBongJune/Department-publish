@@ -12,6 +12,11 @@ const kF9CColor = Color(0xFFF9F9F9);
 const kFFColor = Color(0xFFFFC656);
 const k98Color = Color(0xFF989898);
 const kFAColor = Color(0xFFFA3F3F);
+const kEAColor = Color(0xFFEA4335);
+const k96Color = Color(0xFF969696);
+const kCCColor = Color(0xFFCCCCCC);
+const k35Color = Color(0xFF3468EA);
+const kEDColor = Color(0xFFEDEDED);
 
 const double size10 = 10.0;
 const double size13 = 13.0;
