@@ -2,6 +2,7 @@ import 'package:department/core/constant/color_and_size.dart';
 import 'package:department/pages/bookmark_list_page/bookmark_list_page.dart';
 import 'package:department/pages/my_info_page/my_info_page.dart';
 import 'package:department/pages/my_write_page/my_write_page.dart';
+import 'package:department/pages/qna_page/qna_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -164,7 +165,13 @@ class MyPageBody extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => QnAPage(),
+                      ),
+                    );
+                  },
                   child: Row(
                     children: [
                       Text(
