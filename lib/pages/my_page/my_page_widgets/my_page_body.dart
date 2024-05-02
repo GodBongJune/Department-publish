@@ -1,4 +1,5 @@
 import 'package:department/core/constant/color_and_size.dart';
+import 'package:department/core/constant/move.dart';
 import 'package:department/pages/bookmark_list_page/bookmark_list_page.dart';
 import 'package:department/pages/my_info_page/my_info_page.dart';
 import 'package:department/pages/my_write_page/my_write_page.dart';
@@ -242,7 +243,13 @@ class MyPageBody extends StatelessWidget {
                 padding: const EdgeInsets.all(16.0),
                 child: Center(
                   child: InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamedAndRemoveUntil(
+                        context,
+                        Move.login,
+                        (Route<dynamic> route) => false,
+                      );
+                    },
                     child: Row(
                       children: [
                         Text(
